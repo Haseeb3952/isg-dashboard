@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <section>
+      <div class="container-fluid">
+        <div class="row sidebar-bg">
+          <div class="col-12 col-lg-2 p-0">
+            <div class="min-vh-100 sidebar">
+              <div class="text-center py-5">
+                <img
+                  src="./assets/images/sidebar-logo.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="px-4">
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/dashboard-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="text-white m-0">Dashboard</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/profile-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Profile</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/share-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Share</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/notification-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Notification</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/announcement-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Announcement</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/settings-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Settings</p>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="#"
+                  class="text-decoration-none position-absolute bottom-0"
+                >
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/logout-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Logout</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-10 right-sider-radius bg-light p-0">
+            <div class="p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a href="#" class="btn px-3 btn-hidden-menu">
+                    <img
+                      src="./assets/images/menu-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    id="offcanvasTrigger"
+                    class="btn btn-menu"
+                    data-bs-toggle="offcanvas"
+                    href="#offcanvasExample"
+                    role="button"
+                    aria-controls="offcanvasExample"
+                  >
+                    <img
+                      src="./assets/images/menu-icon.svg"
+                      class="img-fluid menu-image"
+                      alt=""
+                    />
+                  </a>
+
+                  <div
+                    class="offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel"
+                  >
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        Offcanvas
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div>
+                        Some text as placeholder. In real life you can have the
+                        elements you have chosen. Like, text, images, lists,
+                        etc.
+                      </div>
+                      <div class="dropdown mt-3">
+                        <button
+                          class="btn btn-secondary dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-bs-toggle="dropdown"
+                        >
+                          Dropdown button
+                        </button>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-lg-5 gap-0"
+                  >
+                    <div class="me-lg-5 me-4">
+                      <div class="d-flex gap-2 align-items-center">
+                        <div>
+                          <div class="profile-picture">
+                            <img
+                              src="https://img.freepik.com/free-photo/3d-illustration-teenager-with-funny-face-glasses_1142-50955.jpg?t=st=1716370291~exp=1716373891~hmac=fad32ad9d57ccce5539f45cc9ec53c2b9787ad6f5d8afa2ee78dca3275fa622b&w=740"
+                              class="img-fluid rounded-circle"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <h6 class="m-0 fw-600">Abdul Haseeb</h6>
+                          <p class="m-0 text-secondary fs-13">
+                            Computer Science
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="position-relative">
+                        <img
+                          src="./assets/images/bell-icon.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="position-absolute bottom-0">
+                          <img
+                            src="./assets/images/red-circle.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="m-0" />
+            <div class="p-lg-5 p-4">
+              <div class="banner-bg">
+                <div class="row align-items-center">
+                  <div class="col-12 col-lg-6 px-5 py-4">
+                    <p class="fs-13 light-dark">September 4, 2023</p>
+                    <h3 class="text-white pt-lg-5 pt-2">Welcome back, John!</h3>
+                    <p class="light-dark fs-13 m-0">
+                      Always stay updated in your student portal
+                    </p>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="school-bag">
+                      <img
+                        src="./assets/images/school-bag.svg"
+                        class="img-fluid w-100"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row my-lg-5 my-3 g-3">
+                <div class="col-12 col-lg-9">
+                  <div class="row gy-3">
+                    <div class="col-12 col-lg-4">
+                      <a href="#" class="text-decoration-none">
+                        <div class="card-shadow p-3">
+                          <p class="m-0 liver-color fw-500">Profile Views</p>
+                          <h2 class="text-center liver-color">10</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <a href="#" class="text-decoration-none">
+                        <div class="card-shadow p-3">
+                          <p class="m-0 liver-color fw-500">Link Taps</p>
+                          <h2 class="text-center liver-color">10</h2>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <a href="#" class="text-decoration-none">
+                        <div class="card-shadow p-3">
+                          <p class="m-0 liver-color fw-500">Leads</p>
+                          <h2 class="text-center liver-color">10</h2>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                  <div class="card-shadow p-lg-3 p-4">
+                    <p class="liver-color">Top Taped Links</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center my-3"
+                    >
+                      <div>
+                        <img
+                          src="./assets/images/instagram.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h6 class="m-0">0</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center my-3"
+                    >
+                      <div>
+                        <img
+                          src="./assets/images/facebook.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h6 class="m-0">0</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center my-3"
+                    >
+                      <div>
+                        <img
+                          src="./assets/images/youtube.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h6 class="m-0">0</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center my-3"
+                    >
+                      <div>
+                        <img
+                          src="./assets/images/whatsapp.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h6 class="m-0">0</h6>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center my-3"
+                    >
+                      <div>
+                        <img
+                          src="./assets/images/twitter.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <h6 class="m-0">0</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const offcanvasTrigger = document.getElementById("offcanvasTrigger");
+        const offcanvasElement = document.getElementById("offcanvasExample");
+
+        offcanvasTrigger.addEventListener("click", function (event) {
+          if (window.innerWidth >= 768) {
+            event.preventDefault();
+            // You can add other functionality for desktop view here
+            console.log("Offcanvas is disabled on desktop view.");
+          } else {
+            // Allow the default behavior (open the offcanvas) on mobile view
+            const bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
+            bsOffcanvas.show();
+          }
+        });
+      });
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

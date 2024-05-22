@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Classes */
+
+.btn-custom-bg {
+  background-color: #153860;
+}
+
+.radius-20 {
+  border-radius: 20px;
+}
+
+.right-sider-radius {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.liver-color {
+  color: #524d4d;
+}
+/* Bootstrap Reset Classes */
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #000000;
+  outline: 0;
+  box-shadow: none;
+}
+
+.custom-min-vh {
+  min-height: 90vh;
+}
+
+.login-bg {
+  background: linear-gradient(
+    180.48deg,
+    #b9dbef 4.36%,
+    #b9dbef 16.08%,
+    #bfdef3 21.14%,
+    #b6dcf3 26.65%,
+    #add6ec 33.76%,
+    #a4d2ea 39.86%,
+    #9dccea 46.97%,
+    #92cae5 53.04%,
+    #8dc8e6 58.27%,
+    #8cc8e6 64.23%,
+    #9fcdea 99.81%
+  );
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.separator-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.line {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #000000;
+  margin: 0 10px;
+}
+
+.or-text {
+  color: #888;
+  padding: 0 10px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.link-color {
+  color: #3771c8;
+}
+
+/* Dashboard Page CSS */
+
+.sidebar-bg {
+  background-color: #153860;
+}
+
+.sidebar-link {
+  color: #ffffff80;
+}
+
+.profile-picture {
+  height: 40px;
+  width: 40px;
+}
+
+.profile-picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.banner-bg {
+  background: linear-gradient(98.5deg, #153860 53.12%, #dfcff7 155.43%);
+  border-radius: 12px;
+}
+
+.light-dark {
+  color: #ffffffbf;
+}
+
+.card-shadow {
+  box-shadow: 0px 2px 15px 0px #47444440;
+  border-radius: 15px;
+}
+
+.btn-menu {
+  display: none;
+}
+
+/* Hide offcanvas trigger and offcanvas on larger screens */
+@media (min-width: 768px) {
+  .offcanvas-trigger,
+  .offcanvas {
+    display: none;
+  }
+  .divider {
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 767.98px) {
+  .offcanvas-trigger,
+  .offcanvas {
+    display: block;
+  }
+  .btn-menu {
+    display: block;
+  }
+  .btn-hidden-menu {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  
+.right-sider-radius {
+    border-radius: 0px;
+  }
+}
