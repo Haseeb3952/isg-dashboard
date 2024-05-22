@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <section>
+      <div class="container-fluid">
+        <div class="row sidebar-bg">
+          <div class="col-12 col-lg-2 p-0">
+            <div class="min-vh-100 sidebar">
+              <div class="text-center py-5">
+                <a href="./dashboard.html">
+                  <img
+                    src="./assets/images/sidebar-logo.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="px-4">
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/dashboard-icon-light.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Dashboard</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./profile.html" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/profile-icon-white.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="text-white m-0">Profile</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./share.html" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/share-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Share</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./notification.html" class="text-decoration-none">
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/notification-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Notification</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./announcement.html" class="text-decoration-none">
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/announcement-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Announcement</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="./settings.html" class="text-decoration-none">
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/settings-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Settings</p>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="./index.html"
+                  class="text-decoration-none position-absolute bottom-0"
+                >
+                  <div class="d-flex gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/logout-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Logout</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-10 right-sider-radius bg-light p-0">
+            <div class="p-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <a href="#" class="btn px-3 btn-hidden-menu">
+                    <img
+                      src="./assets/images/menu-icon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    id="offcanvasTrigger"
+                    class="btn btn-menu"
+                    data-bs-toggle="offcanvas"
+                    href="#offcanvasExample"
+                    role="button"
+                    aria-controls="offcanvasExample"
+                  >
+                    <img
+                      src="./assets/images/menu-icon.svg"
+                      class="img-fluid menu-image"
+                      alt=""
+                    />
+                  </a>
+
+                  <div
+                    class="offcanvas offcanvas-start sidebar-bg"
+                    tabindex="-1"
+                    id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel"
+                  >
+                    <div class="offcanvas-header mt-3 mx-3">
+                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                        <a href="./dashboard.html">
+                          <img
+                            src="./assets/images/sidebar-logo.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close text-white bg-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body py-0">
+                      <div class="px-4">
+                        <a href="./dashboard.html" class="text-decoration-none">
+                          <div class="d-flex align-items-center gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/dashboard-icon-light.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="sidebar-link m-0">Dashboard</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="./profile.html" class="text-decoration-none">
+                          <div class="d-flex align-items-center gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/profile-icon-white.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="text-white m-0">Profile</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="./share.html" class="text-decoration-none">
+                          <div class="d-flex align-items-center gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/share-icon.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="sidebar-link m-0">Share</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="./notification.html"
+                          class="text-decoration-none"
+                        >
+                          <div class="d-flex gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/notification-icon.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="sidebar-link m-0">Notification</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="./announcement.html"
+                          class="text-decoration-none"
+                        >
+                          <div class="d-flex gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/announcement-icon.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="sidebar-link m-0">Announcement</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="./settings.html" class="text-decoration-none">
+                          <div class="d-flex gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/settings-icon.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="sidebar-link m-0">Settings</p>
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="./index.html"
+                          class="text-decoration-none position-absolute bottom-0"
+                        >
+                          <div class="d-flex gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/logout-icon.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="sidebar-link m-0">Logout</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="d-flex justify-content-between align-items-center gap-lg-5 gap-0"
+                  >
+                    <div class="me-lg-5 me-4">
+                      <div class="d-flex gap-2 align-items-center">
+                        <div>
+                          <div class="profile-picture">
+                            <img
+                              src="https://img.freepik.com/free-photo/3d-illustration-teenager-with-funny-face-glasses_1142-50955.jpg?t=st=1716370291~exp=1716373891~hmac=fad32ad9d57ccce5539f45cc9ec53c2b9787ad6f5d8afa2ee78dca3275fa622b&w=740"
+                              class="img-fluid rounded-circle"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div>
+                          <h6 class="m-0 fw-600">Abdul Haseeb</h6>
+                          <p class="m-0 text-secondary fs-13">
+                            Computer Science
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="position-relative">
+                        <img
+                          src="./assets/images/bell-icon.svg"
+                          class="img-fluid"
+                          alt=""
+                        />
+                        <div class="position-absolute bottom-0">
+                          <img
+                            src="./assets/images/red-circle.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="m-0" />
+            <div class="cover-picture position-relative">
+              <div
+                class="position-absolute camera-icon d-flex justify-content-center align-items-center rounded-circle bottom-0 end-0 m-3"
+              >
+                <input
+                  type="file"
+                  class="img-fluid"
+                  style="
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                  "
+                  accept="image/*"
+                  alt=""
+                />
+                <img
+                  src="./assets/images/camera-icon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="px-lg-5 px-3">
+              <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                  <div
+                    class="d-flex gap-lg-4 gap-3 justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="profile-pic position-relative">
+                        <img
+                          src="https://img.freepik.com/free-photo/happy-dark-skinned-girl-enjoys-every-moment-life-dances-moves-raises-arms-clenches-fists-closes-eyes-has-good-mood-wears-denim-sarafan-turtleneck-isolated-pink-wall_273609-42165.jpg?t=st=1716382470~exp=1716386070~hmac=636e0f81e93e45099b82c74279f125e3fc5edbd99569228643a4be1b62bc8576&w=900"
+                          class="img-fluid rounded-circle"
+                          alt=""
+                        />
+                        <div
+                          class="position-absolute camera-icon-small d-flex justify-content-center align-items-center rounded-circle"
+                        >
+                          <input
+                            type="file"
+                            class="img-fluid"
+                            style="
+                              opacity: 0;
+                              position: absolute;
+                              width: 100%;
+                              height: 100%;
+                              cursor: pointer;
+                            "
+                            accept="image/*"
+                            alt=""
+                          />
+                          <img
+                            src="./assets/images/camera-icon.svg"
+                            class="img-fluid camera-img"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 class="fw-600 mb-1 mt-2">John Doe</h4>
+                      <p class="fs-13 bio-text">
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex justify-content-end">
+                    <button
+                      type="button"
+                      class="btn p-0"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      <img
+                        src="./assets/images/share-modal-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                  <div
+                    class="d-flex justify-content-lg-end justify-content-start my-2"
+                  >
+                    <div class="d-flex gap-2 align-items-center">
+                      <div>
+                        <a href="#">
+                          <img
+                            src="./assets/images/fb-icon.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <img
+                            src="./assets/images/ig-icon.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <img
+                            src="./assets/images/tw-icon.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div>
+                        <a href="#">
+                          <img
+                            src="./assets/images/ld-icon.svg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mt-3">
+                <a href="#" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-2">
+                    <div>
+                      <img
+                        src="./assets/images/edit-profile-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="m-0 link-text">Edit Profile</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button
+                        class="nav-link active"
+                        id="nav-home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-home"
+                        aria-selected="true"
+                      >
+                        <div class="d-flex gap-2 align-items-center">
+                          <div>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                          </div>
+                          <div>
+                            <p class="m-0">My Details</p>
+                          </div>
+                        </div>
+                      </button>
+                      <button
+                        class="nav-link"
+                        id="nav-profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-profile"
+                        aria-selected="false"
+                      >
+                        <div class="d-flex gap-2 align-items-center">
+                          <div>
+                            <i class="fa fa-link" aria-hidden="true"></i>
+                          </div>
+                          <div>
+                            <p class="m-0">Attached links</p>
+                          </div>
+                        </div>
+                      </button>
+                      <button
+                        class="nav-link"
+                        id="nav-contact-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-contact"
+                        aria-selected="false"
+                      >
+                        <div class="d-flex gap-2 align-items-center">
+                          <div>
+                            <i
+                              class="fa fa-address-card-o"
+                              aria-hidden="true"
+                            ></i>
+                          </div>
+                          <div>
+                            <p class="m-0">Cards</p>
+                          </div>
+                        </div>
+                      </button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="nav-home"
+                      role="tabpanel"
+                      aria-labelledby="nav-home-tab"
+                    >
+                      <div class="p-4 card-shadow my-4">
+                        <h5 class="navy-blue fw-bold">About Me</h5>
+                        <p class="fs-13 m-0">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when
+                          looking at its layout. The point of using Lorem Ipsum
+                          is that it has a more-or-less normal distribution of
+                          letters, as opposed to using 'Content here, content
+                          here', making it look like readable English. Many
+                          desktop publishing packages and web page editors now
+                          use Lorem Ipsum as their default model text, and a
+                          search for 'lorem ipsum' will uncover many web sites
+                          still in their infancy. Various versions have evolved
+                          over the years, sometimes by accident, sometimes on
+                          purpose (injected humour and the like).
+                        </p>
+                      </div>
+
+                      <div class="row gy-3">
+                        <div class="col-12 col-lg-8">
+                          <div class="card-shadow p-4">
+                            <h5 class="navy-blue fw-bold">
+                              Personal information
+                            </h5>
+                            <div class="row">
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center my-4 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">Name:</h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">
+                                      Abdul Haseeb
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center my-4 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">CNIC:</h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">
+                                      0000-000000-0
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center my-4 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">
+                                      Blood Gr:
+                                    </h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">B+</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center my-4 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">DOB:</h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">11-8-2005</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center my-4 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">Phone:</h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">
+                                      +923367063952
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center my-4 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">
+                                      Nationality:
+                                    </h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">Pakistani</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center mt-3 mb-0 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">
+                                      Gander:
+                                    </h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">Male</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                <div
+                                  class="d-flex justify-content-between align-items-center mt-3 mb-0 gap-2"
+                                >
+                                  <div>
+                                    <h6 class="navy-blue fw-600 m-0">Email:</h6>
+                                  </div>
+                                  <div>
+                                    <p class="info-text fs-15 m-0">
+                                      haseeb7063952@gmail.com
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                          <div class="card-shadow p-4">
+                            <h5 class="navy-blue fw-bold mb-2">
+                              Student information
+                            </h5>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div>
+                                <h6 class="navy-blue fw-600">Roll No:</h6>
+                              </div>
+                              <div>
+                                <p class="info-text fs-15">75894</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div>
+                                <h6 class="navy-blue fw-600">Degree:</h6>
+                              </div>
+                              <div>
+                                <p class="info-text fs-15">BSCS</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div>
+                                <h6 class="navy-blue fw-600">Batch:</h6>
+                              </div>
+                              <div>
+                                <p class="info-text fs-15">2020</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between align-items-center gap-2"
+                            >
+                              <div>
+                                <h6 class="navy-blue fw-600">Section:</h6>
+                              </div>
+                              <div>
+                                <p class="info-text fs-15">B-2</p>
+                              </div>
+                            </div>
+                            <div
+                              class="d-flex justify-content-between gap-2 align-items-center"
+                            >
+                              <div>
+                                <h6 class="navy-blue fw-600">Campus:</h6>
+                              </div>
+                              <div>
+                                <p class="info-text fs-15 m-0">Gold Campus</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row my-3 mx-lg-1 mx-1">
+                        <div class="card-shadow p-4">
+                          <h5 class="navy-blue fw-bold mb-2">Skills</h5>
+                          <div class="row">
+                            <div class="col-auto my-2">
+                              <button
+                                class="btn btn-skills-bg rounded-pill px-4"
+                              >
+                                Figma
+                              </button>
+                            </div>
+                            <div class="col-auto my-2">
+                              <button
+                                class="btn btn-skills-bg rounded-pill px-4"
+                              >
+                                Adobe Photoshop
+                              </button>
+                            </div>
+                            <div class="col-auto my-2">
+                              <button
+                                class="btn btn-skills-bg rounded-pill px-4"
+                              >
+                                Adobe Illustrator
+                              </button>
+                            </div>
+                            <div class="col-auto my-2">
+                              <button
+                                class="btn btn-skills-bg rounded-pill px-4"
+                              >
+                                Sketch
+                              </button>
+                            </div>
+                            <div class="col-auto my-2">
+                              <button
+                                class="btn btn-skills-bg rounded-pill px-4"
+                              >
+                                Adobe XD
+                              </button>
+                            </div>
+                            <div class="col-auto my-2">
+                              <button
+                                class="btn btn-skills-bg rounded-pill px-4"
+                              >
+                                Canva
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-profile"
+                      role="tabpanel"
+                      aria-labelledby="nav-profile-tab"
+                    >
+                      Profile
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-contact"
+                      role="tabpanel"
+                      aria-labelledby="nav-contact-tab"
+                    >
+                      Contact
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share Social Media Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const offcanvasTrigger = document.getElementById("offcanvasTrigger");
+        const offcanvasElement = document.getElementById("offcanvasExample");
+
+        offcanvasTrigger.addEventListener("click", function (event) {
+          if (window.innerWidth >= 768) {
+            event.preventDefault();
+            // You can add other functionality for desktop view here
+            console.log("Offcanvas is disabled on desktop view.");
+          } else {
+            // Allow the default behavior (open the offcanvas) on mobile view
+            const bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
+            bsOffcanvas.show();
+          }
+        });
+      });
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
