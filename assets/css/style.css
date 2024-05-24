@@ -380,8 +380,34 @@ body {
 }
 
 
+/* Notification Page CSS */
 
+.marks-as-read-text {
+  color: #0753AA;
+}
 
+.bg-notification {
+  background-color: #6b9f7314;
+}
+
+.user-avatar {
+  height: 50px;
+  width: 50px;
+}
+
+.user-avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.btn-new {
+  background-color: #53BC63;
+}
+
+.bg-bell {
+  background-color: #ECECEC80;
+}
 
 
 
