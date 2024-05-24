@@ -39,7 +39,7 @@
                 </a>
               </div>
               <div class="px-4">
-                <a href="#" class="text-decoration-none">
+                <a href="./dashboard.html" class="text-decoration-none">
                   <div class="d-flex align-items-center gap-3 my-4">
                     <div>
                       <img
@@ -310,7 +310,7 @@
                     class="d-flex justify-content-between align-items-center gap-lg-5 gap-0"
                   >
                     <div class="me-lg-5 me-4">
-                      <div class="d-flex gap-2 align-items-center">
+                      <div class="d-flex gap-2 align-items-center gap-1">
                         <div>
                           <div class="profile-picture">
                             <img
@@ -423,12 +423,7 @@
                 </div>
                 <div class="col-12 col-lg-6">
                   <div class="d-flex justify-content-end">
-                    <button
-                      type="button"
-                      class="btn p-0"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                    >
+                    <button type="button" class="btn p-0">
                       <img
                         src="./assets/images/share-modal-icon.svg"
                         class="img-fluid"
@@ -481,7 +476,7 @@
                 </div>
               </div>
               <div class="d-flex justify-content-end mt-3">
-                <a href="#" class="text-decoration-none">
+                <a href="./edit-profile.html" class="text-decoration-none">
                   <div class="d-flex align-items-center gap-2">
                     <div>
                       <img
@@ -511,8 +506,11 @@
                         aria-selected="true"
                       >
                         <div class="d-flex gap-2 align-items-center">
-                          <div>
-                            <i class="fa fa-user" aria-hidden="true"></i>
+                          <div class="mobile-hidden">
+                            <i
+                              class="fa fa-user mobile-hidden"
+                              aria-hidden="true"
+                            ></i>
                           </div>
                           <div>
                             <p class="m-0">My Details</p>
@@ -529,9 +527,12 @@
                         aria-controls="nav-profile"
                         aria-selected="false"
                       >
-                        <div class="d-flex gap-2 align-items-center">
-                          <div>
-                            <i class="fa fa-link" aria-hidden="true"></i>
+                        <div class="d-flex gap-2 align-items-center gap-1">
+                          <div class="mobile-hidden">
+                            <i
+                              class="fa fa-link mobile-hidden"
+                              aria-hidden="true"
+                            ></i>
                           </div>
                           <div>
                             <p class="m-0">Attached links</p>
@@ -548,8 +549,8 @@
                         aria-controls="nav-contact"
                         aria-selected="false"
                       >
-                        <div class="d-flex gap-2 align-items-center">
-                          <div>
+                        <div class="d-flex gap-2 align-items-center gap-1">
+                          <div class="mobile-hidden">
                             <i
                               class="fa fa-address-card-o"
                               aria-hidden="true"
@@ -765,51 +766,53 @@
                           </div>
                         </div>
                       </div>
-                      <div class="row my-3 mx-lg-1 mx-1">
-                        <div class="card-shadow p-4">
-                          <h5 class="navy-blue fw-bold mb-2">Skills</h5>
-                          <div class="row">
-                            <div class="col-auto my-2">
-                              <button
-                                class="btn btn-skills-bg rounded-pill px-4"
-                              >
-                                Figma
-                              </button>
-                            </div>
-                            <div class="col-auto my-2">
-                              <button
-                                class="btn btn-skills-bg rounded-pill px-4"
-                              >
-                                Adobe Photoshop
-                              </button>
-                            </div>
-                            <div class="col-auto my-2">
-                              <button
-                                class="btn btn-skills-bg rounded-pill px-4"
-                              >
-                                Adobe Illustrator
-                              </button>
-                            </div>
-                            <div class="col-auto my-2">
-                              <button
-                                class="btn btn-skills-bg rounded-pill px-4"
-                              >
-                                Sketch
-                              </button>
-                            </div>
-                            <div class="col-auto my-2">
-                              <button
-                                class="btn btn-skills-bg rounded-pill px-4"
-                              >
-                                Adobe XD
-                              </button>
-                            </div>
-                            <div class="col-auto my-2">
-                              <button
-                                class="btn btn-skills-bg rounded-pill px-4"
-                              >
-                                Canva
-                              </button>
+                      <div class="row mt-4 mb-5">
+                        <div class="col-12">
+                          <div class="card-shadow p-4">
+                            <h5 class="navy-blue fw-bold mb-2">Skills</h5>
+                            <div class="row">
+                              <div class="col-auto my-2">
+                                <button
+                                  class="btn btn-skills-bg rounded-pill px-4"
+                                >
+                                  Figma
+                                </button>
+                              </div>
+                              <div class="col-auto my-2">
+                                <button
+                                  class="btn btn-skills-bg rounded-pill px-4"
+                                >
+                                  Adobe Photoshop
+                                </button>
+                              </div>
+                              <div class="col-auto my-2">
+                                <button
+                                  class="btn btn-skills-bg rounded-pill px-4"
+                                >
+                                  Adobe Illustrator
+                                </button>
+                              </div>
+                              <div class="col-auto my-2">
+                                <button
+                                  class="btn btn-skills-bg rounded-pill px-4"
+                                >
+                                  Sketch
+                                </button>
+                              </div>
+                              <div class="col-auto my-2">
+                                <button
+                                  class="btn btn-skills-bg rounded-pill px-4"
+                                >
+                                  Adobe XD
+                                </button>
+                              </div>
+                              <div class="col-auto my-2">
+                                <button
+                                  class="btn btn-skills-bg rounded-pill px-4"
+                                >
+                                  Canva
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -821,19 +824,1308 @@
                       role="tabpanel"
                       aria-labelledby="nav-profile-tab"
                     >
-                      Profile
+                      <div class="py-4">
+                        <div
+                          class="modal fade"
+                          id="exampleModalToggle"
+                          aria-hidden="true"
+                          aria-labelledby="exampleModalToggleLabel"
+                          tabindex="-1"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content radius-20 p-3">
+                              <div class="modal-body">
+                                <h5 class="fw-600 pb-2">Customized link</h5>
+                                <div class="d-flex gap-2">
+                                  <div>
+                                    <input
+                                      type="text"
+                                      placeholder="Name"
+                                      class="form-control"
+                                      name=""
+                                      id=""
+                                    />
+                                  </div>
+                                  <div>
+                                    <input
+                                      type="text"
+                                      placeholder="Enter link here"
+                                      class="form-control"
+                                      name=""
+                                      id=""
+                                    />
+                                  </div>
+
+                                  <div>
+                                    <button
+                                      class="btn btn-custom-bg text-white"
+                                    >
+                                      Add
+                                    </button>
+                                  </div>
+                                </div>
+                                <hr />
+                                <div class="">
+                                  <a
+                                    href="#"
+                                    class="text-decoration-none"
+                                    data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    <div class="modal-socials">
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/yt-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                YouTube
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/fb-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                Facebook
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/wa-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                Whatsapp
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/tw-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                Twitter
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/yt-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                YouTube
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/fb-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                Facebook
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/wa-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                Whatsapp
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                      <div
+                                        class="d-flex justify-content-between align-items-center my-3"
+                                      >
+                                        <div>
+                                          <div
+                                            class="d-flex gap-2 align-items-center"
+                                          >
+                                            <div class="add-social-icon">
+                                              <img
+                                                src="./assets/images/tw-modal-icon.svg"
+                                                class="img-fluid"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <div>
+                                              <p class="m-0 fw-500 text-dark">
+                                                Twitter
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                          <img
+                                            src="./assets/images/arrow-right.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="modal fade"
+                          id="exampleModalToggle2"
+                          aria-hidden="true"
+                          aria-labelledby="exampleModalToggleLabel2"
+                          tabindex="-1"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content radius-20 p-3">
+                              <div class="modal-body">
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <div
+                                    class="p-3 bg-light-secondary rounded-circle"
+                                  >
+                                    <img
+                                      src="./assets/images/instagram.svg"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <h4 class="fw-600 pb-2">Instagram</h4>
+                                <div class="row">
+                                  <div class="col-lg-10 col-9 pe-0">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Enter link here"
+                                    />
+                                  </div>
+                                  <div class="col-lg-2 col-3 ps-0">
+                                    <button
+                                      class="btn btn-modal-add text-white w-100"
+                                    >
+                                      Add
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a
+                          class="btn btn-custom-bg px-5 text-white"
+                          data-bs-toggle="modal"
+                          href="#exampleModalToggle"
+                          role="button"
+                          >Add New</a
+                        >
+                        <div class="row my-3">
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/instagram.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-lg-4">
+                            <div class="card-shadow p-3 my-2">
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div>
+                                  <div class="d-flex align-items-center gap-2">
+                                    <div
+                                      class="rounded-circle attached-links-bg d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex justify-content-center align-items-center attached-social-links"
+                                      >
+                                        <img
+                                          src="./assets/images/link-icon.svg"
+                                          class="img-fluid"
+                                          alt=""
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <h6 class="m-0 fw-600 fs-13">
+                                        Instagram
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="d-flex align-items-center">
+                                    <div>
+                                      <div class="form-check form-switch">
+                                        <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          id="flexSwitchCheckChecked"
+                                          checked
+                                        />
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="dropdown">
+                                        <button
+                                          class="btn"
+                                          type="button"
+                                          id="dropdownMenuButton1"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <img
+                                            src="./assets/images/dropdown-dots.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </button>
+                                        <ul
+                                          class="dropdown-menu shadow"
+                                          aria-labelledby="dropdownMenuButton1"
+                                        >
+                                          <li
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
+                                          >
+                                            <a class="dropdown-item" href="#"
+                                              >Update</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a class="dropdown-item" href="#"
+                                              >Remove</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div
-                      class="tab-pane fade"
+                      class="tab-pane fade min-vh-100"
                       id="nav-contact"
                       role="tabpanel"
                       aria-labelledby="nav-contact-tab"
                     >
-                      Contact
+                      <div class="row my-3 align-items-center">
+                        <div class="col-3 col-lg-6">
+                          <div class="d-flex gap-3 align-items-center">
+                            <div class="card-icon">
+                              <img
+                                src="./assets/images/id-card-icon.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <h6 class="fw-700 m-0">ID</h6>
+                              <p class="truncate m-0">
+                                https://vlinq.co/p/8ee58242-a850-432a-8d99-e4844cf99120
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-3 col-lg-2">
+                          <h6 class="fw-700">Type</h6>
+                          <p class="m-0">Card</p>
+                        </div>
+                        <div class="col-3 col-lg-2">
+                          <h6 class="fw-700">Status</h6>
+                          <p class="m-0">Active</p>
+                        </div>
+                        <div class="col-3 col-lg-2">
+                          <h6 class="fw-700">Action</h6>
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <div
+                          class="modal fade"
+                          id="customModal1"
+                          aria-hidden="true"
+                          aria-labelledby="customModalLabel1"
+                          tabindex="-1"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <div class="">
+                                  <div class="row m-3">
+                                    <div class="col-4"></div>
+                                    <div class="col-7">
+                                      <h4>Activate card</h4>
+                                    </div>
+                                    <div class="col-1">
+                                      <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal"
+                                        aria-label="Close"
+                                      ></button>
+                                    </div>
+                                  </div>
+                                  <button
+                                    class="btn btn-custom-bg w-100 open-custom-modal2"
+                                    data-bs-target="#customModal2"
+                                    data-bs-toggle="modal"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex align-items-center gap-4"
+                                      >
+                                        <div class="scan-by-qr">
+                                          <img
+                                            src="./assets/images/scan-by-qr.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div>
+                                          <p class="m-0 text-white">
+                                            Scan by QR
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </button>
+                                </div>
+                                <div class="separator-container my-2">
+                                  <hr class="line" />
+                                  <span class="or-text">OR</span>
+                                  <hr class="line" />
+                                </div>
+                                <div class="">
+                                  <button
+                                    class="btn w-100 btn-custom-bg open-custom-modal3"
+                                    data-bs-target="#customModal3"
+                                    data-bs-toggle="modal"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    <div
+                                      class="d-flex justify-content-center align-items-center"
+                                    >
+                                      <div
+                                        class="d-flex align-items-center gap-4"
+                                      >
+                                        <div class="scan-by-qr">
+                                          <img
+                                            src="./assets/images/scan-by-nfc.svg"
+                                            class="img-fluid"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div>
+                                          <p class="m-0 text-white">
+                                            Scan by NFC
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </button>
+
+                                  <input
+                                    type="text"
+                                    class="form-control rounded-pill my-3"
+                                    placeholder="Activate By URL"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="modal fade"
+                          id="customModal2"
+                          aria-hidden="true"
+                          aria-labelledby="customModalLabel2"
+                          tabindex="-1"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <div class="d-flex justify-content-end">
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <div class="qr-code">
+                                    <img
+                                      src="./assets/images/QR-code.svg"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                  <button
+                                    class="btn btn-custom-bg text-white w-25 rounded-pill"
+                                  >
+                                    Scan
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="modal fade"
+                          id="customModal3"
+                          aria-hidden="true"
+                          aria-labelledby="customModalLabel3"
+                          tabindex="-1"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <div class="d-flex justify-content-end">
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <div class="qr-code">
+                                    <img
+                                      src="./assets/images/nfc.svg"
+                                      class="img-fluid"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                                <div class="text-center">
+                                  <p class="text-danger">
+                                    Tap your NFC in mobile view only
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <a
+                          class="btn btn-custom-bg my-5 activate-custom-card d-flex gap-2 align-items-center"
+                          data-bs-toggle="modal"
+                          href="#customModal1"
+                          role="button"
+                        >
+                          <div>
+                            <img
+                              src="./assets/images/btn-QR.svg"
+                              class="img-fluid"
+                              alt=""
+                            />
+                          </div>
+                          <div>
+                            <h6 class="text-white m-0">Activate card</h6>
+                          </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-6"></div>
               </div>
             </div>
           </div>
@@ -841,7 +2133,7 @@
       </div>
     </section>
 
-    <!-- Share Social Media Modal -->
+    <!-- Update Modal -->
     <div
       class="modal fade"
       id="exampleModal"
@@ -850,26 +2142,32 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal-content p-3 radius-20">
+          <div class="modal-body">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="p-3 bg-light-secondary rounded-circle">
+                <img
+                  src="./assets/images/instagram.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h4 class="fw-600 pb-2">Instagram</h4>
+            <div class="row">
+              <div class="col-lg-9 col-8 pe-0">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="instagram.com/username_haseeb/"
+                />
+              </div>
+              <div class="col-lg-3 col-4 ps-0">
+                <button class="btn btn-modal-add text-white w-100">
+                  Update
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

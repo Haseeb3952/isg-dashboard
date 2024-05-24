@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Sweet Alert Library -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Settings</title>
+</head>
+
+<body>
+  <section>
+    <div class="container-fluid">
+      <div class="row sidebar-bg">
+        <div class="col-12 col-lg-2 p-0">
+          <div class="min-vh-100 sidebar">
+            <div class="text-center py-5">
+              <a href="./dashboard.html">
+                <img src="./assets/images/sidebar-logo.svg" class="img-fluid" alt="" />
+              </a>
+            </div>
+            <div class="px-4">
+              <a href="./dashboard.html" class="text-decoration-none">
+                <div class="d-flex align-items-center gap-3 my-4">
+                  <div>
+                    <img src="./assets/images/dashboard-icon-light.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="sidebar-link m-0">Dashboard</p>
+                  </div>
+                </div>
+              </a>
+              <a href="./profile.html" class="text-decoration-none">
+                <div class="d-flex align-items-center gap-3 my-4">
+                  <div>
+                    <img src="./assets/images/profile-icon.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="sidebar-link m-0">Profile</p>
+                  </div>
+                </div>
+              </a>
+              <a href="./share.html" class="text-decoration-none">
+                <div class="d-flex align-items-center gap-3 my-4">
+                  <div>
+                    <img src="./assets/images/share-icon.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="sidebar-link m-0">Share</p>
+                  </div>
+                </div>
+              </a>
+              <a href="./notification.html" class="text-decoration-none">
+                <div class="d-flex gap-3 my-4">
+                  <div>
+                    <img src="./assets/images/notification-icon.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="sidebar-link m-0">Notification</p>
+                  </div>
+                </div>
+              </a>
+              <a href="./announcement.html" class="text-decoration-none">
+                <div class="d-flex gap-3 my-4">
+                  <div>
+                    <img src="./assets/images/announcement-icon.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="sidebar-link m-0">Announcement</p>
+                  </div>
+                </div>
+              </a>
+              <a href="./settings.html" class="text-decoration-none">
+                <div class="d-flex gap-3 my-4">
+                  <div>
+                    <img src="./assets/images/settings-icon-white.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="text-white m-0">Settings</p>
+                  </div>
+                </div>
+              </a>
+              <a href="./index.html" class="text-decoration-none position-absolute bottom-0">
+                <div class="d-flex gap-3 my-4">
+                  <div>
+                    <img src="./assets/images/logout-icon.svg" class="img-fluid" alt="" />
+                  </div>
+                  <div>
+                    <p class="sidebar-link m-0">Logout</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-10 right-sider-radius bg-light p-0">
+          <div class="p-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <a href="#" class="btn px-3 btn-hidden-menu">
+                  <img src="./assets/images/menu-icon.svg" class="img-fluid" alt="" />
+                </a>
+                <a id="offcanvasTrigger" class="btn btn-menu" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                  role="button" aria-controls="offcanvasExample">
+                  <img src="./assets/images/menu-icon.svg" class="img-fluid menu-image" alt="" />
+                </a>
+
+                <div class="offcanvas offcanvas-start sidebar-bg" tabindex="-1" id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header mt-3 mx-3">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                      <a href="./dashboard.html">
+                        <img src="./assets/images/sidebar-logo.svg" class="img-fluid" alt="" />
+                      </a>
+                    </h5>
+                    <button type="button" class="btn-close text-white bg-white" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body py-0">
+                    <div class="px-4">
+                      <a href="./dashboard.html" class="text-decoration-none">
+                        <div class="d-flex align-items-center gap-3 my-4">
+                          <div>
+                            <img src="./assets/images/dashboard-icon-light.svg" class="img-fluid" alt="" />
+                          </div>
+                          <div>
+                            <p class="sidebar-link m-0">Dashboard</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./profile.html" class="text-decoration-none">
+                        <div class="d-flex align-items-center gap-3 my-4">
+                          <div>
+                            <img src="./assets/images/profile-icon.svg" class="img-fluid" alt="" />
+                          </div>
+                          <div>
+                            <p class="sidebar-link m-0">Profile</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./share.html" class="text-decoration-none">
+                        <div class="d-flex align-items-center gap-3 my-4">
+                          <div>
+                            <img src="./assets/images/share-icon.svg" class="img-fluid" alt="" />
+                          </div>
+                          <div>
+                            <p class="sidebar-link m-0">Share</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./notification.html" class="text-decoration-none">
+                        <div class="d-flex gap-3 my-4">
+                          <div>
+                            <img src="./assets/images/notification-icon.svg" class="img-fluid" alt="" />
+                          </div>
+                          <div>
+                            <p class="sidebar-link m-0">Notification</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./announcement.html" class="text-decoration-none">
+                        <div class="d-flex gap-3 my-4">
+                          <div>
+                            <img src="./assets/images/announcement-icon.svg" class="img-fluid" alt="" />
+                          </div>
+                          <div>
+                            <p class="sidebar-link m-0">Announcement</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./settings.html" class="text-decoration-none">
+                        <div class="d-flex gap-3 my-4">
+                          <div>
+                            <img src="./assets/images/settings-icon-white.svg" class="img-fluid" alt="" />
+                          </div>
+                          <div>
+                            <p class="text-white m-0">Settings</p>
+                          </div>
+                        </div>
+                      </a>
+                      <a href="./index.html" class="text-decoration-none position-absolute bottom-0">
+                        <div class="d-flex gap-3 my-4">
+                          <div>
+                            <img src="./assets/images/logout-icon.svg" class="img-fluid" alt="" />
+                          </div>
+                          <div>
+                            <p class="sidebar-link m-0">Logout</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between align-items-center gap-lg-5 gap-0">
+                  <div class="me-lg-5 me-4">
+                    <div class="d-flex gap-2 align-items-center">
+                      <div>
+                        <div class="profile-picture">
+                          <img
+                            src="https://img.freepik.com/free-photo/3d-illustration-teenager-with-funny-face-glasses_1142-50955.jpg?t=st=1716370291~exp=1716373891~hmac=fad32ad9d57ccce5539f45cc9ec53c2b9787ad6f5d8afa2ee78dca3275fa622b&w=740"
+                            class="img-fluid rounded-circle" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <h6 class="m-0 fw-600">Abdul Haseeb</h6>
+                        <p class="m-0 text-secondary fs-13">
+                          Computer Science
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="position-relative">
+                      <img src="./assets/images/bell-icon.svg" class="img-fluid" alt="" />
+                      <div class="position-absolute bottom-0">
+                        <img src="./assets/images/red-circle.svg" class="img-fluid" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="p-lg-5 p-4">
+            <h4 class="fw-600">Settings</h4>
+            <nav>
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active ps-0" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">
+                    Password
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    Privacy
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-language-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-language" type="button" role="tab" aria-controls="pills-language"
+                    aria-selected="false">
+                    Language
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link px-lg-3 px-0" id="pills-terms-tab" data-bs-toggle="pill" data-bs-target="#pills-terms"
+                    type="button" role="tab" aria-controls="pills-terms" aria-selected="false">
+                    Terms and Conditions
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <div>
+                    <h5 class="fw-500">Change Password</h5>
+                    <hr class="mb-0" />
+                    <div class="row">
+                      <div class="col-lg-8 col-12">
+                        <div class="row align-items-center my-lg-2 my-0 gy-3">
+                          <div class="col-lg-4 col-12">
+                            <p class="m-0 fw-500 pt-lg-0 pt-3">
+                              Current Password:
+                            </p>
+                          </div>
+                          <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control bg-transparent" name="" id="" />
+                          </div>
+                        </div>
+                        <div class="row align-items-center my-lg-2 my-0 gy-3">
+                          <div class="col-lg-4 col-12">
+                            <p class="m-0 fw-500 pt-lg-0 pt-3">
+                              New Password:
+                            </p>
+                          </div>
+                          <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control bg-transparent" name="" id="" />
+                          </div>
+                        </div>
+                        <div class="row align-items-center my-lg-2 my-0 gy-3">
+                          <div class="col-lg-4 col-12">
+                            <p class="m-0 fw-500 pt-lg-0 pt-3">
+                              Confirm New Password:
+                            </p>
+                          </div>
+                          <div class="col-lg-8 col-12">
+                            <input type="text" class="form-control bg-transparent" name="" id="" />
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <div class="d-flex gap-4">
+                            <div>
+                              <button class="btn">Cancel</button>
+                            </div>
+                            <div>
+                              <button class="btn text-primary" id="updateButton">
+                                Update
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div>
+                    <h5 class="fw-500">Privacy</h5>
+                    <hr class="mb-0" />
+                    <p class="pt-2">what you want to show at your profile</p>
+                    <div class="row">
+                      <div class="col-lg-5 col-12">
+                        <h5 class="pb-2">Personal information</h5>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">CNIC</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">
+                              Blood Group
+                            </h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">
+                              Date of Birth
+                            </h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Phone</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Gender</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">
+                              Nationality
+                            </h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Email</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <h5 class="pb-2">Student information</h5>
+
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Roll No</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Degree</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Batch</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Section</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                          <div>
+                            <h6 class="fw-600 personal-info-text">Campus</h6>
+                          </div>
+                          <div>
+                            <div class="form-check form-switch">
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-language" role="tabpanel" aria-labelledby="pills-language-tab">
+                  <div>
+                    <h5 class="fw-500">Language</h5>
+                    <hr class="mb-0" />
+                    <p class="pt-2">Select your Language</p>
+                    <button class="btn p-0">
+                      <div class="d-flex align-items-center gap-2">
+                        <div>
+                          <p class="m-0 fw-500">English</p>
+                        </div>
+                        <div>
+                          <img src="./assets/images/language-icon.svg" class="img-fluid" alt="" />
+                        </div>
+                      </div>
+                    </button>
+                    <div class="my-lg-2 my-3">
+                      <button class="btn p-0">
+                        <p class="m-0 fw-500">English</p>
+                      </button>
+                    </div>
+                    <div class="my-lg-2 my-3">
+                      <button class="btn p-0">
+                        <p class="m-0 fw-500">English</p>
+                      </button>
+                    </div>
+                    <div class="my-lg-2 my-3">
+                      <button class="btn p-0">
+                        <p class="m-0 fw-500">English</p>
+                      </button>
+                    </div>
+                    <div class="my-lg-2 my-3">
+                      <button class="btn p-0">
+                        <p class="m-0 fw-500">English</p>
+                      </button>
+                    </div>
+                    <div class="my-lg-2 my-3">
+                      <button class="btn p-0">
+                        <p class="m-0 fw-500">English</p>
+                      </button>
+                    </div>
+                    <div class="my-lg-2 my-3">
+                      <button class="btn p-0">
+                        <p class="m-0 fw-500">English</p>
+                      </button>
+                    </div>
+                    <div class="my-lg-2 my-3">
+                      <button class="btn p-0">
+                        <p class="m-0 fw-500">English</p>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-terms" role="tabpanel" aria-labelledby="pills-terms-tab">
+                  <div>
+                    <h5 class="fw-500">Terms and Condition</h5>
+                    <hr class="mb-0" />
+                    <div class="py-3">
+                      <p class="fs-15">
+                        Introduction Welcome to the ISG NFC Card Application
+                        web application. By accessing or using our service,
+                        you agree to comply with and be bound by the following
+                        terms and conditions. Please read these terms
+                        carefully before using our service.
+                      </p>
+                      <p class="fs-15">
+                        <span class="fw-600">1.</span> Acceptance of Terms By
+                        using the ISG NFC Card Application, you agree to these
+                        Terms and Conditions. If you do not agree with any
+                        part of these terms, you must not use our application.
+                      </p>
+                      <p class="fs-15">
+                        <span class="fw-600">2.</span> Eligibility To use this
+                        service, you must be a registered student of ISG. By
+                        applying for an NFC card, you confirm that you meet
+                        this eligibility requirement.
+                      </p>
+                      <p class="m-0">
+                        <span class="fw-600">3. User Account</span>
+                      <ul>
+                        <li class="fs-15">
+                          You must create an account to apply for the NFC card.
+                        </li>
+                        <li class="fs-15">You are responsible for maintaining the confidentiality of your account information and
+                          password.</li>
+                        <li class="fs-15">
+                          You agree to provide accurate and complete information during the registration and application
+                          process.
+                        </li>
+                      </ul>
+                      </p>
+                      <p class="m-0">
+                        <span class="fw-600">4. Application Process</span>
+                      <ul>
+                        <li class="fs-15">
+                          The application process involves filling out a form with your personal and student
+                          information. </li>
+                        <li class="fs-15">You must ensure that all information provided is accurate and up-to-date.</li>
+                        <li class="fs-15">
+                          Incomplete or inaccurate applications may be rejected.
+                        </li>
+                      </ul>
+                      </p>
+                      <p class="m-0">
+                        <span class="fw-600">5. Use of the NFC Card</span>
+                      <ul>
+                        <li class="fs-15">
+                          The NFC card is issued for the purpose of student identification and access to certain
+                          facilities.
+                        </li>
+                        <li class="fs-15">You must ensure that all information provided is accurate and up-to-date.</li>
+                        <li class="fs-15">
+                          Lost or stolen cards must be reported immediately to ISG administration.
+                        </li>
+                      </ul>
+                      </p>
+                      <p class="m-0">
+                        <span class="fw-600">6. Privacy Policy</span>
+                      <ul>
+                        <li class="fs-15">
+                          We collect and use personal information in accordance with our Privacy Policy.
+                        </li>
+                        <li class="fs-15">
+                          By using the ISG NFC Card Application, you consent to the collection, use, and disclosure of
+                          your personal information as described in the Privacy Policy. </li>
+                      </ul>
+                      </p>
+                      <p class="m-0">
+                        <span class="fw-600">7. Intellectual Property</span>
+                      <ul>
+                        <li class="fs-15">
+                          All content and materials on the ISG NFC Card Application website, including text, graphics,
+                          logos, and software, are the property of ISG or its licensors. </li>
+                        <li class="fs-15">
+                          You may not use, reproduce, or distribute any content from this site without prior written
+                          permission from ISG.
+                        </li>
+                      </ul>
+                      </p>
+                      <p class="m-0">
+                        <span class="fw-600">8. Limitation of Liability</span>
+                      <ul>
+                        <li class="fs-15">
+                          ISG is not liable for any direct, indirect, incidental, or consequential damages arising from
+                          the use of, or inability to use, the NFC card or the application service.
+                        </li>
+                        <li class="fs-15">
+                          We do not guarantee the continuous, uninterrupted, or secure access to our services.
+                        </li>
+                      </ul>
+                      </p>
+                      <p class="fs-15">
+                        <span class="fw-600">10. </span>
+                        Governing Law These Terms and Conditions are governed by and construed in accordance with the laws of the jurisdiction in which ISG operates. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the courts of that jurisdiction.
+                      </p>
+                      <p class="m-0 fs-15">
+                        <span class="fw-600">11. </span>
+                       Contact Information For any questions or concerns regarding these Terms and Conditions, please contact us at support@isg.edu.                      </p>
+                       
+                       <div class="d-flex gap-2 my-2">
+                        <div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          
+                          </div>
+                        </div>
+                        <div><p class="fs-15">
+                          By clicking "Agree" or by using the ISG NFC Card Application, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions.
+                         </p></div>
+                       </div>
+                       <div class="d-flex justify-content-end">
+                        <button class="btn btn-custom-bg px-5 text-white">
+                          Save
+                        </button>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    document
+      .getElementById("updateButton")
+      .addEventListener("click", function () {
+        // Simulate password update logic here
+
+        // Show SweetAlert
+        Swal.fire({
+          imageUrl: "./assets/images/sweetalert-check.svg", // Replace with your custom image URL
+          imageWidth: 100,
+          imageHeight: 100,
+          html: '<span class="swal2-title-custom">Password Successfully Changed</span>',
+          showConfirmButton: false,
+          timer: 9000,
+          width: "400px", // Adjust the width as needed
+
+          customClass: {
+            popup: "swal2-popup-custom",
+          },
+        });
+      });
+  </script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const offcanvasTrigger = document.getElementById("offcanvasTrigger");
+      const offcanvasElement = document.getElementById("offcanvasExample");
+
+      offcanvasTrigger.addEventListener("click", function (event) {
+        if (window.innerWidth >= 768) {
+          event.preventDefault();
+          // You can add other functionality for desktop view here
+          console.log("Offcanvas is disabled on desktop view.");
+        } else {
+          // Allow the default behavior (open the offcanvas) on mobile view
+          const bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
+          bsOffcanvas.show();
+        }
+      });
+    });
+  </script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

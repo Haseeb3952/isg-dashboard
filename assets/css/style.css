@@ -36,7 +36,6 @@ body {
   font-weight: 600;
 }
 
-
 .fw-700 {
   font-weight: 700;
 }
@@ -48,6 +47,27 @@ body {
 .navy-blue {
   color: #153860;
 }
+
+.bg-light-secondary {
+  background-color: #F3F3F3;
+}
+
+.btn-modal-add {
+  background-color: #337CCC;
+}
+
+.truncate {
+  width: 20ch; /* Ch is the width of the "0" character. Adjust as needed. */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block; /* Ensure it's a block-level element */
+}
+
+.bg-custom-info {
+  background-color: #5EB5DB;
+}
+
 /* Bootstrap Reset Classes */
 
 .btn-check:focus + .btn,
@@ -163,7 +183,7 @@ body {
 /* Profile Page CSS */
 
 .cover-picture {
-  background-image: url("https://marketplace.canva.com/EAEmB8syHfM/2/0/1600w/canva-blue-yellow-green-illustration-rainbow-community-facebook-cover-szl42yKZyX4.jpg");
+  background-image: url("/assets/images/cover-picture.svg");
   height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -235,6 +255,153 @@ body {
   background-color: #E5F1FF;
 }
 
+.modal-socials {
+  height: 180px;
+  overflow-y: auto;
+}
+
+.attached-links-bg {
+  background-color: #EDE8E8;
+  height: 40px;
+  width: 40px;
+}
+
+.attached-social-links {
+  height: 20px;
+  width: 20px;
+}
+
+.attached-social-links img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.card-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.scan-by-qr {
+  height: 30px;
+  width: 30px;
+}
+
+.qr-code {
+  height: 200px;
+  width: 200px;
+}
+
+.qr-code img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Edit Profile Page CSS */
+
+.input-radius {
+  border-radius: 7px;
+}
+
+.add-social-icon {
+  height: 28px;
+  width: 28px;
+}
+
+.add-social-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Share Page CSS */
+
+.my-qr-code {
+  height: 200px;
+  width: 200px;
+}
+
+.my-qr-code img {
+  height: 100%;
+  width: 100%;
+}
+
+.copy-profile-url-bg {
+  background-color: #f1f1f1;
+}
+
+.social-media-filled-icon {
+  height: 30px;
+  width: 30px;
+}
+
+/* My Profile Page CSS */
+
+.my-social-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.my-social-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Settings Page CSS */
+
+.nav-pills .nav-link.active {
+  color: #397EE5;
+  background-color: transparent;
+  border: none;
+}
+.nav-pills .nav-link {
+  color: #000000;
+}
+
+.swal2-title-custom {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.swal2-popup-custom {
+  border-radius: 15px; /* Adjust the border-radius as needed */
+}
+
+.swal2-image {
+  margin-bottom: 0; /* Removes the margin-bottom of the image */
+}
+
+.personal-info-text {
+  color: #5E5C5C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Hide offcanvas trigger and offcanvas on larger screens */
 @media (min-width: 768px) {
   .offcanvas-trigger,
@@ -267,12 +434,16 @@ body {
 .right-sider-radius {
     border-radius: 0px;
   }
+  .mobile-hidden {
+    display: none;
+  }
 
   /* Profile Page CSS */
 
   .cover-picture {
-    background-image: url("https://marketplace.canva.com/EAEmB8syHfM/2/0/1600w/canva-blue-yellow-green-illustration-rainbow-community-facebook-cover-szl42yKZyX4.jpg");
+    background-image: url("/assets/images/cover-picture.svg");
     height: 150px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -288,5 +459,13 @@ body {
 .bio-text {
   color: #00000080;
   font-size: 10px;
+}
+.card-icon {
+  height: 20px;
+  width: 20px;
+}
+.truncate {
+  width: 2ch; /* Ch is the width of the "0" character. Adjust as needed. */
+ 
 }
 }
