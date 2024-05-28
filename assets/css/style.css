@@ -49,11 +49,11 @@ body {
 }
 
 .bg-light-secondary {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
 }
 
 .btn-modal-add {
-  background-color: #337CCC;
+  background-color: #337ccc;
 }
 
 .truncate {
@@ -65,7 +65,11 @@ body {
 }
 
 .bg-custom-info {
-  background-color: #5EB5DB;
+  background-color: #5eb5db;
+}
+
+.text-green {
+  color: #56d20b;
 }
 
 /* Bootstrap Reset Classes */
@@ -79,7 +83,7 @@ body {
 .form-control:focus {
   color: #212529;
   background-color: #fff;
-  border-color: #000000;
+  border-color: #acacac;
   outline: 0;
   box-shadow: none;
 }
@@ -193,7 +197,7 @@ body {
 .camera-icon {
   height: 50px;
   width: 50px;
-  background-color: #D3D3D3BD;
+  background-color: #d3d3d3bd;
   border: 1px solid #5e5e5ebd;
 }
 
@@ -212,7 +216,7 @@ body {
 .camera-icon-small {
   height: 30px;
   width: 30px;
-  background-color: #D3D3D3BD;
+  background-color: #d3d3d3bd;
   cursor: pointer;
   left: 100px;
   bottom: 0%;
@@ -227,24 +231,24 @@ body {
   color: #00000080;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: #2A6BB6;
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #2a6bb6;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
-
 
 .nav-tabs .nav-link {
   margin-bottom: -1px;
   background: 0 0;
   border: 1px solid transparent;
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
   color: #787878;
 }
 
 .link-text {
-  color: #2A6BB6;
+  color: #2a6bb6;
 }
 
 .info-text {
@@ -252,7 +256,7 @@ body {
 }
 
 .btn-skills-bg {
-  background-color: #E5F1FF;
+  background-color: #e5f1ff;
 }
 
 .modal-socials {
@@ -261,7 +265,7 @@ body {
 }
 
 .attached-links-bg {
-  background-color: #EDE8E8;
+  background-color: #ede8e8;
   height: 40px;
   width: 40px;
 }
@@ -352,8 +356,8 @@ body {
 
 /* Settings Page CSS */
 
-.nav-pills .nav-link.active {
-  color: #397EE5;
+.nav-pills .settings-nav.active {
+  color: #397ee5;
   background-color: transparent;
   border: none;
 }
@@ -376,14 +380,13 @@ body {
 }
 
 .personal-info-text {
-  color: #5E5C5C;
+  color: #5e5c5c;
 }
-
 
 /* Notification Page CSS */
 
 .marks-as-read-text {
-  color: #0753AA;
+  color: #0753aa;
 }
 
 .bg-notification {
@@ -402,30 +405,66 @@ body {
 }
 
 .btn-new {
-  background-color: #53BC63;
+  background-color: #53bc63;
 }
 
 .bg-bell {
-  background-color: #ECECEC80;
+  background-color: #ececec80;
 }
 
+/* Product Page CSS */
 
+.product-card {
+  min-height: 80vh;
+}
 
+.nav-pills .nav-card.active {
+  color: #fff;
+  background-color: #153860;
+}
 
+.bg-charcol {
+  background-image: url("/assets/images/Charcoal-Grey.svg");
+  background-size: cover;
+  height: 100px;
+  clip-path: polygon(0 0, 86% 0, 100% 100%, 0% 100%);
+}
 
+.bg-navy-blue {
+  background-image: url("/assets/images/navy-path.svg");
+  background-size: cover;
+  height: 100px;
+}
 
+.profile-image-card {
+  height: 120px;
+  width: 120px;
+}
 
+.profile-image-card img {
+  height: 100%;
+  width: 100%;
+}
 
+.student-card {
+  z-index: 10;
+}
 
+.card-bottom {
+  bottom: -20px;
+  right: 0px;
+  height: 105px;
+}
 
+.upload-box {
+  height: 50px;
+  width: 50px;
+}
 
-
-
-
-
-
-
-
+/* Hide the file input */
+#file-upload {
+  display: none;
+}
 
 
 /* Hide offcanvas trigger and offcanvas on larger screens */
@@ -456,8 +495,8 @@ body {
   .sidebar {
     display: none;
   }
-  
-.right-sider-radius {
+
+  .right-sider-radius {
     border-radius: 0px;
   }
   .mobile-hidden {
@@ -481,17 +520,16 @@ body {
   .camera-icon-small {
     left: 70px;
   }
-  
-.bio-text {
-  color: #00000080;
-  font-size: 10px;
-}
-.card-icon {
-  height: 20px;
-  width: 20px;
-}
-.truncate {
-  width: 2ch; /* Ch is the width of the "0" character. Adjust as needed. */
- 
-}
+
+  .bio-text {
+    color: #00000080;
+    font-size: 10px;
+  }
+  .card-icon {
+    height: 20px;
+    width: 20px;
+  }
+  .truncate {
+    width: 2ch; /* Ch is the width of the "0" character. Adjust as needed. */
+  }
 }

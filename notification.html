@@ -81,6 +81,20 @@
                     </div>
                   </div>
                 </a>
+                <a href="./product.html" class="text-decoration-none">
+                  <div class="d-flex align-items-center gap-3 my-4">
+                    <div>
+                      <img
+                        src="./assets/images/product-icon.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p class="sidebar-link m-0">Product</p>
+                    </div>
+                  </div>
+                </a>
                 <a href="./notification.html" class="text-decoration-none">
                   <div class="d-flex gap-3 my-4">
                     <div>
@@ -236,6 +250,20 @@
                             </div>
                           </div>
                         </a>
+                        <a href="./product.html" class="text-decoration-none">
+                          <div class="d-flex align-items-center gap-3 my-4">
+                            <div>
+                              <img
+                                src="./assets/images/product-icon.svg"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div>
+                              <p class="sidebar-link m-0">Product</p>
+                            </div>
+                          </div>
+                        </a>
                         <a
                           href="./notification.html"
                           class="text-decoration-none"
@@ -329,6 +357,7 @@
                       </div>
                     </div>
                     <div>
+                       <a href="./notification.html">
                       <div class="position-relative">
                         <img
                           src="./assets/images/bell-icon.svg"
@@ -343,13 +372,14 @@
                           />
                         </div>
                       </div>
+                     </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <hr class="m-0" />
-            <div class="p-lg-5 p-4">
+            <div class="p-lg-5 p-3">
               <div class="text-end">
                 <button class="btn marks-as-read-text fw-500">
                   Mark all as read
@@ -402,383 +432,385 @@
                       role="tabpanel"
                       aria-labelledby="pills-home-tab"
                     >
-                      <div class="bg-notification p-3 rounded-3 my-3">
-                        <div class="row align-items-center">
-                          <div class="col-lg-1 col-2">
-                            <div class="user-avatar">
-                              <img
-                                src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-7 col-5">
-                            <h6 class="fw-600 text-truncate">
-                              Luke tap your card
-                            </h6>
-                            <p class="fs-13 m-0 text-truncate">
-                              It is a long established fact that a reader will
-                              be distracted by the readable It is a long
-                              established fact that a reader will be distracted
-                              by the readable content of a page when looking at
-                              its layouts
-                            </p>
-                          </div>
-                          <div class="col-lg-3 col-3">
-                            <div class="d-flex justify-content-end">
-                              <button class="btn btn-new text-white">
-                                New
-                              </button>
-                            </div>
-                          </div>
-                          <div class="col-lg-1 col-2">
-                            <div class="dropdown">
-                              <button
-                                class="btn"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
+                      <div class="my-4">
+                        <div class="bg-notification p-3 rounded-3 my-3">
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="user-avatar">
                                 <img
-                                  src="./assets/images/dropdown-dots.svg"
+                                  src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
                                   class="img-fluid"
                                   alt=""
                                 />
-                              </button>
-                              <ul
-                                class="dropdown-menu shadow"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Remove</a>
-                                </li>
-                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 col-5">
+                              <h6 class="fw-600 text-truncate">
+                                Luke tap your card
+                              </h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable It is a long
+                                established fact that a reader will be
+                                distracted by the readable content of a page
+                                when looking at its layouts
+                              </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                              <div class="d-flex justify-content-end">
+                                <button class="btn btn-new text-white">
+                                  New
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="border border-1 border-dark p-3 rounded-3 my-3"
-                      >
-                        <div class="row align-items-center">
-                          <div class="col-lg-1 col-2">
-                            <div class="bg-bell p-lg-3 p-1 rounded-3">
-                              <img
-                                src="./assets/images/announcement-bell-icon.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-5">
-                            <h6 class="fw-600 text-truncate">Announcement</h6>
-                            <p class="fs-13 m-0 text-truncate">
-                              It is a long established fact that a reader will
-                              be distracted by the readable
-                            </p>
-                          </div>
-                          <div class="col-lg-4 col-3">
-                            <div class="text-center">
-                              <p class="m-0 text-secondary text-truncate">
-                                24/02/2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="col-lg-1 col-2">
-                            <div class="dropdown">
-                              <button
-                                class="btn"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
+                        <div
+                          class="border border-1 border-dark p-3 rounded-3 my-3"
+                        >
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="bg-bell p-lg-3 p-1 rounded-3">
                                 <img
-                                  src="./assets/images/dropdown-dots.svg"
+                                  src="./assets/images/announcement-bell-icon.svg"
                                   class="img-fluid"
                                   alt=""
                                 />
-                              </button>
-                              <ul
-                                class="dropdown-menu shadow"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Remove</a>
-                                </li>
-                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-5">
+                              <h6 class="fw-600 text-truncate">Announcement</h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable
+                              </p>
+                            </div>
+                            <div class="col-lg-4 col-3">
+                              <div class="text-center">
+                                <p class="m-0 text-secondary text-truncate">
+                                  24/02/2024
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="border border-1 border-dark p-3 rounded-3 my-3"
-                      >
-                        <div class="row align-items-center">
-                          <div class="col-lg-1 col-2">
-                            <div class="bg-bell p-lg-3 p-1 rounded-3">
-                              <img
-                                src="./assets/images/announcement-bell-icon.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-5">
-                            <h6 class="fw-600 text-truncate">Announcement</h6>
-                            <p class="fs-13 m-0 text-truncate">
-                              It is a long established fact that a reader will
-                              be distracted by the readable
-                            </p>
-                          </div>
-                          <div class="col-lg-4 col-3">
-                            <div class="text-center">
-                              <p class="m-0 text-secondary text-truncate">
-                                24/02/2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="col-lg-1 col-2">
-                            <div class="dropdown">
-                              <button
-                                class="btn"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
+                        <div
+                          class="border border-1 border-dark p-3 rounded-3 my-3"
+                        >
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="bg-bell p-lg-3 p-1 rounded-3">
                                 <img
-                                  src="./assets/images/dropdown-dots.svg"
+                                  src="./assets/images/announcement-bell-icon.svg"
                                   class="img-fluid"
                                   alt=""
                                 />
-                              </button>
-                              <ul
-                                class="dropdown-menu shadow"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Remove</a>
-                                </li>
-                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-5">
+                              <h6 class="fw-600 text-truncate">Announcement</h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable
+                              </p>
+                            </div>
+                            <div class="col-lg-4 col-3">
+                              <div class="text-center">
+                                <p class="m-0 text-secondary text-truncate">
+                                  24/02/2024
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="border border-1 border-dark p-3 rounded-3 my-3"
-                      >
-                        <div class="row align-items-center">
-                          <div class="col-lg-1 col-2">
-                            <div class="bg-bell p-lg-3 p-1 rounded-3">
-                              <img
-                                src="./assets/images/announcement-bell-icon.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-5">
-                            <h6 class="fw-600 text-truncate">Announcement</h6>
-                            <p class="fs-13 m-0 text-truncate">
-                              It is a long established fact that a reader will
-                              be distracted by the readable
-                            </p>
-                          </div>
-                          <div class="col-lg-4 col-3">
-                            <div class="text-center">
-                              <p class="m-0 text-secondary text-truncate">
-                                24/02/2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="col-lg-1 col-2">
-                            <div class="dropdown">
-                              <button
-                                class="btn"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
+                        <div
+                          class="border border-1 border-dark p-3 rounded-3 my-3"
+                        >
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="bg-bell p-lg-3 p-1 rounded-3">
                                 <img
-                                  src="./assets/images/dropdown-dots.svg"
+                                  src="./assets/images/announcement-bell-icon.svg"
                                   class="img-fluid"
                                   alt=""
                                 />
-                              </button>
-                              <ul
-                                class="dropdown-menu shadow"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Remove</a>
-                                </li>
-                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-5">
+                              <h6 class="fw-600 text-truncate">Announcement</h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable
+                              </p>
+                            </div>
+                            <div class="col-lg-4 col-3">
+                              <div class="text-center">
+                                <p class="m-0 text-secondary text-truncate">
+                                  24/02/2024
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="border border-1 border-dark p-3 rounded-3 my-3"
-                      >
-                        <div class="row align-items-center">
-                          <div class="col-lg-1 col-2">
-                            <div class="bg-bell p-lg-3 p-1 rounded-3">
-                              <img
-                                src="./assets/images/announcement-bell-icon.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-5">
-                            <h6 class="fw-600 text-truncate">Announcement</h6>
-                            <p class="fs-13 m-0 text-truncate">
-                              It is a long established fact that a reader will
-                              be distracted by the readable
-                            </p>
-                          </div>
-                          <div class="col-lg-4 col-3">
-                            <div class="text-center">
-                              <p class="m-0 text-secondary text-truncate">
-                                24/02/2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="col-lg-1 col-2">
-                            <div class="dropdown">
-                              <button
-                                class="btn"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
+                        <div
+                          class="border border-1 border-dark p-3 rounded-3 my-3"
+                        >
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="bg-bell p-lg-3 p-1 rounded-3">
                                 <img
-                                  src="./assets/images/dropdown-dots.svg"
+                                  src="./assets/images/announcement-bell-icon.svg"
                                   class="img-fluid"
                                   alt=""
                                 />
-                              </button>
-                              <ul
-                                class="dropdown-menu shadow"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Remove</a>
-                                </li>
-                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-5">
+                              <h6 class="fw-600 text-truncate">Announcement</h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable
+                              </p>
+                            </div>
+                            <div class="col-lg-4 col-3">
+                              <div class="text-center">
+                                <p class="m-0 text-secondary text-truncate">
+                                  24/02/2024
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="border border-1 border-dark p-3 rounded-3 my-3"
-                      >
-                        <div class="row align-items-center">
-                          <div class="col-lg-1 col-2">
-                            <div class="bg-bell p-lg-3 p-1 rounded-3">
-                              <img
-                                src="./assets/images/announcement-bell-icon.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-5">
-                            <h6 class="fw-600 text-truncate">Announcement</h6>
-                            <p class="fs-13 m-0 text-truncate">
-                              It is a long established fact that a reader will
-                              be distracted by the readable
-                            </p>
-                          </div>
-                          <div class="col-lg-4 col-3">
-                            <div class="text-center">
-                              <p class="m-0 text-secondary text-truncate">
-                                24/02/2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="col-lg-1 col-2">
-                            <div class="dropdown">
-                              <button
-                                class="btn"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
+                        <div
+                          class="border border-1 border-dark p-3 rounded-3 my-3"
+                        >
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="bg-bell p-lg-3 p-1 rounded-3">
                                 <img
-                                  src="./assets/images/dropdown-dots.svg"
+                                  src="./assets/images/announcement-bell-icon.svg"
                                   class="img-fluid"
                                   alt=""
                                 />
-                              </button>
-                              <ul
-                                class="dropdown-menu shadow"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Remove</a>
-                                </li>
-                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-5">
+                              <h6 class="fw-600 text-truncate">Announcement</h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable
+                              </p>
+                            </div>
+                            <div class="col-lg-4 col-3">
+                              <div class="text-center">
+                                <p class="m-0 text-secondary text-truncate">
+                                  24/02/2024
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        class="border border-1 border-dark p-3 rounded-3 my-3"
-                      >
-                        <div class="row align-items-center">
-                          <div class="col-lg-1 col-2">
-                            <div class="bg-bell p-lg-3 p-1 rounded-3">
-                              <img
-                                src="./assets/images/announcement-bell-icon.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6 col-5">
-                            <h6 class="fw-600 text-truncate">Announcement</h6>
-                            <p class="fs-13 m-0 text-truncate">
-                              It is a long established fact that a reader will
-                              be distracted by the readable
-                            </p>
-                          </div>
-                          <div class="col-lg-4 col-3">
-                            <div class="text-center">
-                              <p class="m-0 text-secondary text-truncate">
-                                24/02/2024
-                              </p>
-                            </div>
-                          </div>
-                          <div class="col-lg-1 col-2">
-                            <div class="dropdown">
-                              <button
-                                class="btn"
-                                type="button"
-                                id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                              >
+                        <div
+                          class="border border-1 border-dark p-3 rounded-3 my-3"
+                        >
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="bg-bell p-lg-3 p-1 rounded-3">
                                 <img
-                                  src="./assets/images/dropdown-dots.svg"
+                                  src="./assets/images/announcement-bell-icon.svg"
                                   class="img-fluid"
                                   alt=""
                                 />
-                              </button>
-                              <ul
-                                class="dropdown-menu shadow"
-                                aria-labelledby="dropdownMenuButton1"
-                              >
-                                <li>
-                                  <a class="dropdown-item" href="#">Remove</a>
-                                </li>
-                              </ul>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-5">
+                              <h6 class="fw-600 text-truncate">Announcement</h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable
+                              </p>
+                            </div>
+                            <div class="col-lg-4 col-3">
+                              <div class="text-center">
+                                <p class="m-0 text-secondary text-truncate">
+                                  24/02/2024
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -790,291 +822,293 @@
                       role="tabpanel"
                       aria-labelledby="pills-profile-tab"
                     >
-                    <div class="bg-notification p-3 rounded-3 my-3">
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 col-2">
-                          <div class="user-avatar">
-                            <img
-                              src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
-                              class="img-fluid"
-                              alt=""
-                            />
+                      <div class="my-4">
+                        <div class="bg-notification p-3 rounded-3 my-3">
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="user-avatar">
+                                <img
+                                  src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-7 col-5">
+                              <h6 class="fw-600 text-truncate">
+                                Luke tap your card
+                              </h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable It is a long
+                                established fact that a reader will be
+                                distracted by the readable content of a page
+                                when looking at its layouts
+                              </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                              <div class="d-flex justify-content-end">
+                                <button class="btn btn-new text-white">
+                                  New
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-lg-7 col-5">
-                          <h6 class="fw-600 text-truncate">
-                            Luke tap your card
-                          </h6>
-                          <p class="fs-13 m-0 text-truncate">
-                            It is a long established fact that a reader will
-                            be distracted by the readable It is a long
-                            established fact that a reader will be distracted
-                            by the readable content of a page when looking at
-                            its layouts
-                          </p>
-                        </div>
-                        <div class="col-lg-3 col-3">
-                          <div class="d-flex justify-content-end">
-                            <button class="btn btn-new text-white">
-                              New
-                            </button>
+                        <div class="bg-notification p-3 rounded-3 my-3">
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="user-avatar">
+                                <img
+                                  src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-7 col-5">
+                              <h6 class="fw-600 text-truncate">
+                                Luke tap your card
+                              </h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable It is a long
+                                established fact that a reader will be
+                                distracted by the readable content of a page
+                                when looking at its layouts
+                              </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                              <div class="d-flex justify-content-end">
+                                <button class="btn btn-new text-white">
+                                  New
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-lg-1 col-2">
-                          <div class="dropdown">
-                            <button
-                              class="btn"
-                              type="button"
-                              id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <img
-                                src="./assets/images/dropdown-dots.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </button>
-                            <ul
-                              class="dropdown-menu shadow"
-                              aria-labelledby="dropdownMenuButton1"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">Remove</a>
-                              </li>
-                            </ul>
+                        <div class="bg-notification p-3 rounded-3 my-3">
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="user-avatar">
+                                <img
+                                  src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-7 col-5">
+                              <h6 class="fw-600 text-truncate">
+                                Luke tap your card
+                              </h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable It is a long
+                                established fact that a reader will be
+                                distracted by the readable content of a page
+                                when looking at its layouts
+                              </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                              <div class="d-flex justify-content-end">
+                                <button class="btn btn-new text-white">
+                                  New
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bg-notification p-3 rounded-3 my-3">
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="user-avatar">
+                                <img
+                                  src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-7 col-5">
+                              <h6 class="fw-600 text-truncate">
+                                Luke tap your card
+                              </h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable It is a long
+                                established fact that a reader will be
+                                distracted by the readable content of a page
+                                when looking at its layouts
+                              </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                              <div class="d-flex justify-content-end">
+                                <button class="btn btn-new text-white">
+                                  New
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bg-notification p-3 rounded-3 my-3">
+                          <div class="row align-items-center">
+                            <div class="col-lg-1 col-2">
+                              <div class="user-avatar">
+                                <img
+                                  src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
+                                  class="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-7 col-5">
+                              <h6 class="fw-600 text-truncate">
+                                Luke tap your card
+                              </h6>
+                              <p class="fs-13 m-0 text-truncate">
+                                It is a long established fact that a reader will
+                                be distracted by the readable It is a long
+                                established fact that a reader will be
+                                distracted by the readable content of a page
+                                when looking at its layouts
+                              </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                              <div class="d-flex justify-content-end">
+                                <button class="btn btn-new text-white">
+                                  New
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col-lg-1 col-2">
+                              <div class="dropdown">
+                                <button
+                                  class="btn"
+                                  type="button"
+                                  id="dropdownMenuButton1"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <img
+                                    src="./assets/images/dropdown-dots.svg"
+                                    class="img-fluid"
+                                    alt=""
+                                  />
+                                </button>
+                                <ul
+                                  class="dropdown-menu shadow"
+                                  aria-labelledby="dropdownMenuButton1"
+                                >
+                                  <li>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="bg-notification p-3 rounded-3 my-3">
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 col-2">
-                          <div class="user-avatar">
-                            <img
-                              src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
-                              class="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-7 col-5">
-                          <h6 class="fw-600 text-truncate">
-                            Luke tap your card
-                          </h6>
-                          <p class="fs-13 m-0 text-truncate">
-                            It is a long established fact that a reader will
-                            be distracted by the readable It is a long
-                            established fact that a reader will be distracted
-                            by the readable content of a page when looking at
-                            its layouts
-                          </p>
-                        </div>
-                        <div class="col-lg-3 col-3">
-                          <div class="d-flex justify-content-end">
-                            <button class="btn btn-new text-white">
-                              New
-                            </button>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 col-2">
-                          <div class="dropdown">
-                            <button
-                              class="btn"
-                              type="button"
-                              id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <img
-                                src="./assets/images/dropdown-dots.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </button>
-                            <ul
-                              class="dropdown-menu shadow"
-                              aria-labelledby="dropdownMenuButton1"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="bg-notification p-3 rounded-3 my-3">
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 col-2">
-                          <div class="user-avatar">
-                            <img
-                              src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
-                              class="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-7 col-5">
-                          <h6 class="fw-600 text-truncate">
-                            Luke tap your card
-                          </h6>
-                          <p class="fs-13 m-0 text-truncate">
-                            It is a long established fact that a reader will
-                            be distracted by the readable It is a long
-                            established fact that a reader will be distracted
-                            by the readable content of a page when looking at
-                            its layouts
-                          </p>
-                        </div>
-                        <div class="col-lg-3 col-3">
-                          <div class="d-flex justify-content-end">
-                            <button class="btn btn-new text-white">
-                              New
-                            </button>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 col-2">
-                          <div class="dropdown">
-                            <button
-                              class="btn"
-                              type="button"
-                              id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <img
-                                src="./assets/images/dropdown-dots.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </button>
-                            <ul
-                              class="dropdown-menu shadow"
-                              aria-labelledby="dropdownMenuButton1"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="bg-notification p-3 rounded-3 my-3">
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 col-2">
-                          <div class="user-avatar">
-                            <img
-                              src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
-                              class="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-7 col-5">
-                          <h6 class="fw-600 text-truncate">
-                            Luke tap your card
-                          </h6>
-                          <p class="fs-13 m-0 text-truncate">
-                            It is a long established fact that a reader will
-                            be distracted by the readable It is a long
-                            established fact that a reader will be distracted
-                            by the readable content of a page when looking at
-                            its layouts
-                          </p>
-                        </div>
-                        <div class="col-lg-3 col-3">
-                          <div class="d-flex justify-content-end">
-                            <button class="btn btn-new text-white">
-                              New
-                            </button>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 col-2">
-                          <div class="dropdown">
-                            <button
-                              class="btn"
-                              type="button"
-                              id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <img
-                                src="./assets/images/dropdown-dots.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </button>
-                            <ul
-                              class="dropdown-menu shadow"
-                              aria-labelledby="dropdownMenuButton1"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="bg-notification p-3 rounded-3 my-3">
-                      <div class="row align-items-center">
-                        <div class="col-lg-1 col-2">
-                          <div class="user-avatar">
-                            <img
-                              src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?t=st=1716560520~exp=1716564120~hmac=ded0fb126c8d1837579dae8f33aef902f1bc8fdb27e76a4410d62d5a78fc1d0e&w=740"
-                              class="img-fluid"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-7 col-5">
-                          <h6 class="fw-600 text-truncate">
-                            Luke tap your card
-                          </h6>
-                          <p class="fs-13 m-0 text-truncate">
-                            It is a long established fact that a reader will
-                            be distracted by the readable It is a long
-                            established fact that a reader will be distracted
-                            by the readable content of a page when looking at
-                            its layouts
-                          </p>
-                        </div>
-                        <div class="col-lg-3 col-3">
-                          <div class="d-flex justify-content-end">
-                            <button class="btn btn-new text-white">
-                              New
-                            </button>
-                          </div>
-                        </div>
-                        <div class="col-lg-1 col-2">
-                          <div class="dropdown">
-                            <button
-                              class="btn"
-                              type="button"
-                              id="dropdownMenuButton1"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <img
-                                src="./assets/images/dropdown-dots.svg"
-                                class="img-fluid"
-                                alt=""
-                              />
-                            </button>
-                            <ul
-                              class="dropdown-menu shadow"
-                              aria-labelledby="dropdownMenuButton1"
-                            >
-                              <li>
-                                <a class="dropdown-item" href="#">Remove</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     </div>
                   </div>
                 </div>
