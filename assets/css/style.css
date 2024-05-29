@@ -184,6 +184,8 @@ body {
   display: none;
 }
 
+
+
 /* Profile Page CSS */
 
 .cover-picture {
@@ -356,7 +358,7 @@ body {
 
 /* Settings Page CSS */
 
-.nav-pills .settings-nav.active {
+.nav-pills .nav-link.active {
   color: #397ee5;
   background-color: transparent;
   border: none;
